@@ -5,10 +5,10 @@
 }   
 :root{
     --ghost:ghostWhite;
-    --backG:#2c7087;
+    --backG:#1f5060;
     --secC:silver;
     --secdddC:#862d59;
-    --darker: #33334d;
+    --darker: #19404d;
     --abox:#cc0000;
     --myOrange: rgb(255, 100,10);
 }
@@ -44,15 +44,24 @@ p{
     color: ghostwhite;
 }
 
+placeholder{
+    color: var(--darker);
+}
 
+a{
+    color: ghostwhite;
+}
 
 .rInput{
-    width: 60px;
+    width: 80px;
     height: 30px;
     font-size: 16px;
+    text-align: right;
+    margin-left: 10px;
     float: left;
     border-radius: 3px;
 }
+
 .rLeft{
     width: 65px;
     height: 30px;
@@ -70,6 +79,7 @@ p{
     text-align: right;
     float: right;
     padding: 5px 5px 5px 0;
+    margin-right: 10px;
     border-radius: 3px;
     color: ghostwhite;
     background: var(--darker);
@@ -87,8 +97,6 @@ p{
     background-color: var(--backG);
     width: 210px;
     height: 550px;
-    border: 2px solid red;
-    border-radius: 5px;
     float: left;
     flex: 1;
 }
@@ -135,17 +143,18 @@ button{
 
 
 #rMainContainer{
-    height: 410px;
-    width: 200px;
-    font-size: 32px;
-    font-weight: 400;
+    height: 390px;
+    width: 202px;
+
     text-align: center;
   /*  text-transform: uppercase; */
     color: silver;
-    margin:  5px auto;
+    margin:  20px auto 0 auto;
     border-radius: 10px;
+    border: 1p solid #000000;
     background-color: var(--darker);
     -webkit-box-shadow: 0 6px 16px -6px black;
+    
 }
 .rCon{
     height: 37px;
@@ -155,6 +164,14 @@ button{
 #displayContainer{
     height: 55px;
     background: #000000;
+    font-size: 32px;
+    font-weight: 400;
+    padding: 10px;
+    text-align: right;
+
+color: lightgoldenrodyellow;    margin-bottom: 10px;
+    border-radius: 10px 10px 0 0;
+
 }
 #rButton{
     width: 35px;

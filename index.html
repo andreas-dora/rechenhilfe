@@ -18,44 +18,36 @@
                         <div id="rMainContainer">
                             <form action="get">
                                     <div class="rCon" id="displayContainer">
-                                        <p><div id=summe></div></p>
+                                        <p><div id=summe>0</div></p>
                                         </div>
 
                                     <div class="rCon" id="r100Con">      
-                                        <span class="rLeft">€100&times;</span>
-                                        <input type="number" class="rInput" id="rInE100" oninput="myFunction()" placeholder=" € 100;-">
-                                        <span class="rRight" id="rZwischenE100"></span>
+                                        <input type="number" class="rInput" id="rInE100" oninput="myFunction()" placeholder=" € 100,-">
+                                        <span class="rRight" id="rZwischenE100">0</span>
                                     </div>                                    
                                     <div class="rCon" id="r50Con">                                           
-                                        <span class="rLeft">€50&times;</span>
-                                        <input type="number" class="rInput" id="rInE50" oninput="myFunction()">
-                                        <span class="rRight" id="rZwischenE50"></span>
+                                        <input type="number" class="rInput" id="rInE50" oninput="myFunction()" placeholder="€ 50,-">
+                                        <span class="rRight" id="rZwischenE50">0</span>
                                     </div>
                                     <div class="rCon" id="r20Con">                                           
-                                        <span class="rLeft">€20&times;</span>
-                                        <input type="number" class="rInput" id="rInE20" oninput="myFunction()">
-                                        <span class="rRight" id="rZwischenE20"></span>    
+                                        <input type="number" class="rInput" id="rInE20" oninput="myFunction()" placeholder="€ 20,-">
+                                        <span class="rRight" id="rZwischenE20">0</span>    
                                         </div>
-                                    <div class="rCon" id="r10Con">                                           
-                                        <span class="rLeft">€10&times;</span>
-                                        <input type="number" class="rInput" id="rInE10" oninput="myFunction()">
-                                        <span class="rRight" id="rZwischenE10"></span>
+                                    <div class="rCon" id="r10Con">                                         <input type="number" class="rInput" id="rInE10" oninput="myFunction()" placeholder="€ 10,-">
+                                        <span class="rRight" id="rZwischenE10">0</span>
                                     </div>                                    
                                     <div class="rCon" id="r5Con">                                           
-                                        <span class="rLeft">€5&times;</span>
-                                        <input type="number" class="rInput" id="rInE5" oninput="myFunction()">
-                                        <span class="rRight" id="rZwischenE5"></span>
+                                        <input type="number" class="rInput" id="rInE5" oninput="myFunction()" placeholder="€ 5,-">
+                                        <span class="rRight" id="rZwischenE5">0</span>
                                     </div>
                                     <div class="rCon" id="rRollenCon">                                           
-                                                <span class="rLeft">Rollen</span>
-                                                <input type="number" class="rInput" id="rInRollen" oninput="myFunction()">
-                                                <span class="rRight" id="rZwischenRollen"></span>
+                                                <input type="number" class="rInput" id="rInRollen" oninput="myFunction()" placeholder="Rollen">
+                                                <span class="rRight" id="rZwischenRollen">0</span>
                                         </div>       
 
                                         <div class="rCon" id="rCoinsCon">                                           
-                                                <span class="rLeft">Münzen</span>
-                                                <input type="number" class="rInput" id="rInCoins" oninput="myFunction()">
-                                                <span class="rRight" id="rZwischenCoins"></span>
+                                                <input type="number" class="rInput" id="rInCoins" oninput="myFunction()" placeholder="€ 1,-">
+                                                <span class="rRight" id="rZwischenCoins">0</span>
                                             </div>        
                                 <input type="reset" name="resetButton" id="rButton" value="C">
                             </form>
@@ -67,7 +59,9 @@
                     </div>
             
         </div>
-        
+        <footer>
+            <h5><u>&copy; Andreas Breitwieser 2019 |</u> <a href="#">Impressum</a></h5>
+        </footer>        
 
         <script type="text/javascript" src="sketch.js"></script>
 

@@ -32,9 +32,10 @@ function myFunction(){
 }
 
 function reset(){
+  document.getElementById("summe").innerText = 0;
   var allIn = document.getElementsByClassName("rRight");
   for(var i = 0; i< allIn.length; i++){
     allIn[i].innerText = '0';
   };
-  alert(allIn.length);
+ // alert(allIn.length);
 }
