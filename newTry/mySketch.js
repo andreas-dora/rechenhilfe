@@ -1,24 +1,39 @@
-var nix = 0;
+const nix = 0;
+const multi = [100, 50, 20, 10, 5,1, 1];
 var summe = 0;
-document.getElementById("display").innerHTML = summe;
-
-var multi = [100, 50, 20, 10, 5,1, 1];
 var input = document.getElementsByClassName("rIn");
+var inVal = new Array;
 var output = document.getElementsByClassName("outP");
-/* for(var i = 0; i<input.length; i++){
-    input[i].value = 0;
-} */
+var summeOut = document.getElementById("display");
+var res = document.getElementById("rButton");
+summeOut.innerHTML = summe.toFixed(2);
+
 for(var i = 0; i<output.length; i++){
-    output[i].innerHTML = nix;
+    output[i].innerHTML = nix.toFixed(2);
 }
 for(var i = 0; i<input.length; i++){
     input[i].addEventListener("change", funktionOne);
 }
-console.log(output);
+res.addEventListener("click", resetto);
 
 function funktionOne(){
-    for(var i = 0; i<output.length; i++){
-        output[i].innerHTML = input[i].value * multi[i];
+    for(var i = 0; i<input.length; i++){
+        inVal[i] = input[i].value * multi[i];
+        output[i].innerHTML = inVal[i].toFixed(2);
     }
-    document.getElementById("display").innerHTML = summe;
+    summe = inVal.reduce(getSumme);
+    summeOut.innerHTML = summe.toFixed(2);
+}
+
+function getSumme(total, num){
+    return total + num;
+}
+
+function resetto(){
+    document.getElementById("myRechner").reset();
+    summe = 0;
+    for(var i = 0; i<output.length; i++){
+        output[i].innerHTML = nix.toFixed(2);
+    }
+    summeOut.innerHTML = nix.toFixed(2);
 }

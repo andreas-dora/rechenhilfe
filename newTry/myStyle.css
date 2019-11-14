@@ -17,31 +17,35 @@
     --inputH: 50px;
 }
 body{
-    background-color: var(--darker);
-    color: red;
+    background-color: var(--newBack);
+    font-family: 'Roboto', sans-serif;
 }
 .container{
     width: 300px;
     height: 510px;
-    background-color: var(--myOrange);
+    background-color: var(--backG);
     border: 2px solid var(--special);
     border-radius: 40px;
     padding: 14px;
     margin: 20px auto;
+    -webkit-box-shadow: 0 6px 16px -6px black;
+
 }
 .row{
     width: 100%;
     height: var(--inputH);
     padding-top: 12px;
-    background-color: var(--newBack);
+    background-color: var(--backG);
 }
 #display{
     width:100%;
     height: 70px;
-    background-color: black;
-    font-size: 30px;
+    background-color: var(--newBack);
+    font-size: 42px;
     text-align: right;
+    padding: 10px 10px 0 0;
     color: var(--special);
+    border-radius: 25px 25px 0 0;
 }
 .rIn{
     width: 100%;
@@ -56,14 +60,13 @@ body{
 .rOut{
     width: 50%;
     height: 100%;
-    background-color: var(--backG);
+    background-color: var(--newBack);
     font-size: 24px;
     text-align: right;
     color: var(--special);
     float: right;
-}
-.outP{
-
+    padding: 5px 10px 0 0;
+    overflow: hidden;
 }
 #resetButton{
     width: var(--inputH);
@@ -72,5 +75,36 @@ body{
     border: 2px solid silver;
     border-radius: 100px;
     margin: 0 auto;
+}
+#rButton{
+    width: var(--inputH);
+    height: var(--inputH);
+    background-color: var(--backG);
+    font-size: 24px;
+    border: 3px solid silver;
+    color: silver;
+    border-radius: 100px;
+    margin: 0 auto;
+}
+#rButton:focus, #rButton:hover{
+    border: 3px solid var(--myOrange);
+    color: var(--myOrange);
+}
+footer{
+    font-size: 18px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    color: var(--ghost);
+}
+u{
+    font-weight: 300px;
+}
+a, u{
+    color: var(--ghost);
+    text-decoration: none;
+}
+a:focus, a:hover{
+    color: silver;
 }
 
