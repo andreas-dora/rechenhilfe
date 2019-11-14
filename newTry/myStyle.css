@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0 px;
+    box-sizing: border-box;
+}   
+:root{
+    --tCol: #FAEBD7;
+    --special: #B0E0E6;
+    --ghost:ghostWhite;
+    --backG:#1f5060;
+    --secC:silver;
+    --secdddC:#862d59;
+    --darker: #19404d;
+    --abox:#cc0000;
+    --myOrange: rgb(255, 100,10);
+    --newBack: rgb(10, 35, 50);
+    --inputH: 50px;
+}
+body{
+    background-color: var(--darker);
+    color: red;
+}
+.container{
+    width: 300px;
+    height: 510px;
+    background-color: var(--myOrange);
+    border: 2px solid var(--special);
+    border-radius: 40px;
+    padding: 14px;
+    margin: 20px auto;
+}
+.row{
+    width: 100%;
+    height: var(--inputH);
+    padding-top: 12px;
+    background-color: var(--newBack);
+}
+#display{
+    width:100%;
+    height: 70px;
+    background-color: black;
+    font-size: 30px;
+    text-align: right;
+    color: var(--special);
+}
+.rIn{
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+}
+.boxLeft{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+.rOut{
+    width: 50%;
+    height: 100%;
+    background-color: var(--backG);
+    font-size: 24px;
+    text-align: right;
+    color: var(--special);
+    float: right;
+}
+.outP{
+
+}
+#resetButton{
+    width: var(--inputH);
+    height: var(--inputH);
+    background-color: var(--backG);
+    border: 2px solid silver;
+    border-radius: 100px;
+    margin: 0 auto;
+}
+
