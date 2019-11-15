@@ -13,7 +13,7 @@
     --darker: #19404d;
     --abox:#cc0000;
     --myOrange: rgb(255, 100,10);
-    --newBack: rgb(10, 35, 50);
+    --newBack: dimgray;
     --inputH: 50px;
 }
 body{
@@ -21,54 +21,65 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardContainer{
     width: 300px;
     height: 510px;
+  /*  border: 2px solid var(--special); 
+    border-radius: 40px; */
+}
+#rotateBody{
+    width: 100%;
+    height: 100%;
     background-color: var(--backG);
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+/*
+.cardContainer:hover #rotateBody{
+    transform: rotateY(180deg);
+}*/
+.card figure{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+}
+.card .front{
+    background: mediumpurple;
+
+}
+.card .back{
+    background: mediumvioletred;
+    transform: rotateY(180deg);
+
+}
+/*
+.oldContainer{
+    width: 300px;
+    height: 510px;
     border: 2px solid var(--special);
     border-radius: 40px;
     padding: 14px;
     margin: 20px auto;
     -webkit-box-shadow: 0 6px 16px -6px black;
-
 }
-.row{
+.cardHead{
     width: 100%;
-    height: var(--inputH);
-    padding-top: 12px;
-    background-color: var(--backG);
+    height: 100;
+    color: wheat;
+    background-color: mediumpurple;
 }
-#display{
-    width:100%;
-    height: 70px;
-    background-color: var(--newBack);
-    font-size: 42px;
-    text-align: right;
-    padding: 10px 10px 0 0;
-    color: var(--special);
-    border-radius: 25px 25px 0 0;
+*/
+.inFront, .gast{
+    width: 250px;
+    height: 25px;
 }
-.rIn{
-    width: 100%;
-    height: 100%;
-    font-size: 24px;
-}
-.boxLeft{
-    width: 40%;
-    height: 100%;
-    float: left;
-}
-.rOut{
-    width: 50%;
-    height: 100%;
-    background-color: var(--newBack);
-    font-size: 24px;
-    text-align: right;
-    color: var(--special);
-    float: right;
-    padding: 5px 10px 0 0;
-    overflow: hidden;
-}
-#rButton{
+.okButton{
     width: var(--inputH);
     height: var(--inputH);
     background-color: var(--backG);
@@ -76,9 +87,9 @@ body{
     border: 3px solid silver;
     color: silver;
     border-radius: 100px;
-    margin: 0 auto;
+
 }
-#rButton:focus, #rButton:hover{
+.okButton:focus, .okButton:hover{       
     border: 3px solid var(--myOrange);
     color: var(--myOrange);
 }
