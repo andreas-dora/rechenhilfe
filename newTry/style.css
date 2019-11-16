@@ -22,10 +22,10 @@ body{
 }
 .container{
     width: 100%;
-    height: 100vh;
-    display: flex;
+    height: 100%;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 .cardContainer{
     width: 300px;
@@ -37,8 +37,32 @@ body{
     width: 100%;
     height: 100%;
     background-color: var(--backG);
-    transition: transform 1s ease-in-out;
-    transform-style: preserve-3d;
+/*     transition: transform 1s ease-in-out;
+    transform-style: preserve-3d; */
+}
+#zContainer{
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    z-index: 10;
+}
+#zCardContainer{
+    width: 300px;
+    height: 510px;
+    z-index: 10;
+    background: greenyellow;
+
+  /*  border: 2px solid var(--special); 
+    border-radius: 40px; */
+}
+#okZ{
+    z-index: 10;
+}
+.myInput{
+    width: 200px;
+    height: 50ox;
 }
 /*
 .cardContainer:hover #rotateBody{
@@ -58,23 +82,7 @@ body{
     transform: rotateY(180deg);
 
 }
-/*
-.oldContainer{
-    width: 300px;
-    height: 510px;
-    border: 2px solid var(--special);
-    border-radius: 40px;
-    padding: 14px;
-    margin: 20px auto;
-    -webkit-box-shadow: 0 6px 16px -6px black;
-}
-.cardHead{
-    width: 100%;
-    height: 100;
-    color: wheat;
-    background-color: mediumpurple;
-}
-*/
+
 .inFront, .gast{
     width: 250px;
     height: 25px;
@@ -93,6 +101,8 @@ body{
     border: 3px solid var(--myOrange);
     color: var(--myOrange);
 }
+
+
 footer{
     font-size: 18px;
     position: fixed;
