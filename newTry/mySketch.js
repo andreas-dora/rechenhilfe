@@ -39,7 +39,7 @@ function turnAround(){
   //  console.log(zInfo);
     alert(document.getElementById("okZ").style.zIndex);
 
-     //     transform: rotateY(180deg);
+   //transform: rotateY(180deg);
 
  //   document.getElementById("test").innerHTML = "PENG, peng, peng";
     myTest.innerHTML = "PENG, peng, peng";
