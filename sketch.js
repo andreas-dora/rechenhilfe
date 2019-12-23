@@ -47,7 +47,6 @@ function copyFun(){
     myHlp.style.left = '-9995px';
     myHlp.value = summe;
     document.body.appendChild(myHlp);
-    window.alert("Puffmutter");
     myHlp.select();
     myHlp.setSelectionRange(0, 99999); /*For mobile devices*/
     document.execCommand("copy");
