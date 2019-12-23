@@ -41,5 +41,15 @@ function resetto(){
 }
 
 function copyFun(){
-    
+    const myHlp = document.createElement('textarea');
+    myHlp.setAttribute('readonly', '');
+    myHlp.style.position = 'absolute'; 
+    myHlp.style.left = '-9995px';
+    myHlp.value = summe;
+    document.body.appendChild(myHlp);
+    window.alert("Puffmutter");
+    myHlp.select();
+    myHlp.setSelectionRange(0, 99999); /*For mobile devices*/
+    document.execCommand("copy");
+    document.body.removeChild(myHlp);
 }
